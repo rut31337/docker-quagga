@@ -16,7 +16,7 @@ ADD         supervisord.conf /etc/supervisord.conf
 VOLUME /etc/quagga
 
 # Expose ports
-EXPOSE 179 2601 2605 89/ip
+EXPOSE 179 2601 2605 89
 
 # Command
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
